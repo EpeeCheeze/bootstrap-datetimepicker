@@ -305,6 +305,13 @@
         date: this.getDate(),
         localDate: this.getLocalDate()
       });
+      
+      if(this.isInput || this.component) {
+      	this.$element.trigger('change');
+      } else {
+      	var input = this.$element.find('input');
+      	input.trigger('change');
+      }
     },
 
     update: function(newDate){
