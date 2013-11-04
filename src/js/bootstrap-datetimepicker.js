@@ -309,8 +309,8 @@
       if(this.isInput || this.component) {
       	this.$element.trigger('changeDate');
       } else {
-      	var input = this.$element.find('input');
-      	input.trigger('changeDate');
+        var input = this.$element.find('input');
+        input.trigger('changeDate');
       }
     },
 
