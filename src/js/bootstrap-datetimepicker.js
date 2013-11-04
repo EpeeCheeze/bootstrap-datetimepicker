@@ -306,9 +306,7 @@
         localDate: this.getLocalDate()
       });
       
-      if(this.isInput || this.component) {
-      	this.$element.trigger('changeDate');
-      } else {
+      if(!this.isInput && this.component) {
         var input = this.$element.find('input');
         input.trigger('changeDate');
       }
