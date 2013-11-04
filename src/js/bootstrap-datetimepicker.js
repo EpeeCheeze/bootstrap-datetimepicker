@@ -307,10 +307,10 @@
       });
       
       if(this.isInput || this.component) {
-      	this.$element.trigger('change');
+      	this.$element.trigger('changeDate');
       } else {
       	var input = this.$element.find('input');
-      	input.trigger('change');
+      	input.trigger('changeDate');
       }
     },
 
